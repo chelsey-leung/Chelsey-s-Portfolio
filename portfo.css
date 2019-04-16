@@ -1,0 +1,193 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    border: 10vw;
+    margin: 1vw;
+    max-width: 100%;
+    
+}
+
+#bg-halfimg{
+    background-image: url(https://images.unsplash.com/photo-1515185500307-65d052ffba10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    height: 1000px;
+    opacity: 0.4;
+    background-size: auto;
+    background-position: center;
+    margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 450px) {
+    #bg-halfimg {
+        background-image: url(https://images.unsplash.com/photo-1543134657-b7463653aac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+        height: 700px;
+        opacity: 0.4;
+        background-size: auto;
+        background-position: center;
+        margin-bottom: 3vw;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 800px) {
+    #bg-halfimg {
+        background-image: url(https://images.unsplash.com/photo-1534055570715-46bdf089997d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+        /* height: 1000px; */
+        opacity: 0.4;
+        background-size: auto;
+        background-position: center;
+        margin-bottom: 3vw;
+    }
+}
+.portfo-title {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+span.border {
+    position: relative;
+    background-color: #111;
+    padding: 6px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    filter: opacity(0.8);
+}
+
+.wrap-box {
+    width: 100%;
+}
+
+.wrap-box a {
+    color: white;
+    font-weight: bold;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.wrap-box img {
+    height: 150px;
+}
+
+.whoami {
+    background-color: #000000;
+    order: 1;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.workex {
+    background-color: #2f4f4f;
+    order: 2;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.mylife {
+    background-color: #708090;
+    order: 3;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contactme {
+    background-color: #778899;
+    order: 4;
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.picture {
+    background-color: #696969;
+    order: 5;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.instagram {
+    order: 1;
+}
+
+.gmail {
+    order: 2;
+}
+
+.phone {
+    order: 3;
+}
+
+@media screen and (min-width: 410px) and (max-width: 700px) {
+    .whoami,
+    .picture,
+    .workex {
+      width: 100%;
+    }
+    .contactme,
+    .mylife {
+      width: 50%;
+    }
+    
+}
+  @media screen and (min-width: 700px) {
+    .whoami {width: 100%;}
+    .mylife, .workex {width: 50%;}
+    .contactme {width: 30%;}
+    .picture {width: 70%;}
+  }
+
+.footer-container {
+    text-align:right;
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+}
+
+.content {
+    height: 600px;
+    padding: 50px;
+    margin-top: 2.5vw;
+    border-style: dotted;
+    border-color: #8B4513;
+    text-align: justify;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column img {
+    height: 100px;
+}
+
+.column {
+    width: 30%;
+    padding: 5px;
+    flex-direction: row wrap;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#photo img{
+    width: 100%;
+    max-width: 450px;
+}
